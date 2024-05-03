@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.clem28l</groupId>
+  <artifactId>TopLuck</artifactId>
+  <version>0.0.1</version>
+  <name>TopLuck</name>
+    <build>
+  <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.8</version>
+          <executions>
+            <execution>
+              <phase>install</phase>
+              <configuration>
+                <target>
+                  <copy file="${project.build.directory}/${project.build.finalName}.jar"
+                        todir="D:\serveur 1.12.2\plugins" />
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+  </plugins>
+</build>
+  <repositories>
+    <repository>
+        <id>org.spigotmc</id>
+        <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
+  
+<dependencies>
+    <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>net.md-5</groupId>
+        <artifactId>bungeecord-api</artifactId>
+        <version>1.20-R0.2</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.32</version>
+        <scope>provided</scope>
+    </dependency>
+
+</dependencies>
+</project>

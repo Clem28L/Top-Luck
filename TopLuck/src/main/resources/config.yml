@@ -1,0 +1,14 @@
+BlockList:
+  BlockListBase: 
+     - STONE
+  BlockListMinerais:
+     - COAL_ORE
+     - IRON_ORE
+     - GOLD_ORE
+     - LAPIS_ORE
+     - DIAMOND_ORE
+     - EMERALD_ORE
+     - REDSTONE_ORE
+     
+WarningLimit:
+   0.25

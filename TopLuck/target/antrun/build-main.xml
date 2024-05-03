@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="D:\eclipse\workspace\TopLuck\target/TopLuck-0.0.1.jar" todir="D:\serveur 1.12.2\plugins"/>
+</target>
+</project>

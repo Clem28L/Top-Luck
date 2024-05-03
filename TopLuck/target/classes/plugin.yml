@@ -1,0 +1,11 @@
+name: TopLuck
+version: 1.0.0
+author: Clem28L
+main: fr.clem28l.topluck.TopLuck
+api: 1.12.2
+
+commands:
+  topluck:
+    description: affiche les 5 premiers avec le plus grand ratio
+    permission: topluck.topluck
+ 
